@@ -7,10 +7,14 @@ defineEmits(["addTodo"])
 
 
 <template>
-    <form @submit.prevent="() => $emit('addTodo', description)">
-        <input type="text" v-model="description">
+    <form id="form" @submit.prevent="() => $emit('addTodo', description)">
+        <input type="text" v-model="description" placeholder="Add task">
         <button>Add Task</button>
     </form>
 </template>
 
-<style scoped></style>
+<style scoped>
+#form {
+    padding-bottom: 20px;
+}
+</style>

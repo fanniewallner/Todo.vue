@@ -24,6 +24,11 @@ defineEmits(["toggleTodo", "removeTodo"])
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
 }
 
 .done {
