@@ -17,4 +17,8 @@ defineEmits(["addTodo"])
 #form {
     padding-bottom: 20px;
 }
+
+button {
+    margin-left: 10px;
+}
 </style>

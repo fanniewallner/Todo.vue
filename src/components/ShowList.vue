@@ -14,7 +14,6 @@ const addTodo = (description: string) => {
 const handleToggle = (i: number) => {
     todos.value[i].isDone = !todos.value[i].isDone
     saveTodosToLS(todos.value)
-    //todos.value[i].isDone = !todos.value[i].isDone
 };
 
 function saveTodosToLS(tasks: Todo[]) {
