@@ -28,7 +28,7 @@ defineEmits(["toggleTodo", "removeTodo"])
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
-    background-image: url('/mesh-gradient.png');
+    background-image: url('/93.-Medium-Goldenrod_1.jpg');
 }
 
 .done {
