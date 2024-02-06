@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, defineEmits } from 'vue';
 
 const description = ref("")
-defineEmits(["addTodo"])
+const emit = defineEmits(["addTodo"]);
+const addTodo = () => {
+    emit('addTodo', description.value);
+    description.value = "";
+}
 </script>
 
 
 <template>
-    <form id="form" @submit.prevent="() => $emit('addTodo', description)">
+    <form id="form" @submit.prevent="addTodo">
         <input type="text" v-model="description" placeholder="Add task">
         <button>Add Task</button>
     </form>

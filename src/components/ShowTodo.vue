@@ -13,7 +13,7 @@ defineEmits(["toggleTodo", "removeTodo"])
     <div class="todo">
         <input type="checkbox" :checked="todo.isDone" @change="$emit('toggleTodo')" />
         <span :class="{ done: todo.isDone }"> {{ todo.description }} </span>
-        <button @click="() => $emit('removeTodo', todo)">Delete</button>
+        <button class="delete-button" @click="() => $emit('removeTodo', todo)">Delete</button>
     </div>
 </template>
 
@@ -28,10 +28,14 @@ defineEmits(["toggleTodo", "removeTodo"])
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    background-image: url('/mesh-gradient.png');
 }
 
 .done {
     text-decoration: line-through;
+}
+
+.delete-button {
+    margin-left: auto;
 }
 </style>

@@ -41,10 +41,4 @@ const removeTodo = (i: number) => {
 ul {
     list-style: none;
 }
-
-/* #todos {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-} */
 </style>
